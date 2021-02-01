@@ -1,0 +1,39 @@
+Copy Site Key = 6LfaDxQaAAAAAP8Hlksz_G6f4udIWVI5XZV1R2bz
+Copy Secerat Key = 6LfaDxQaAAAAAH_IhM97YP0y1qYt19VgIRIyjWLW
+
+
+https://developers.google.com/recaptcha/docs/display
+
+https://developers.google.com/recaptcha/docs/verify
+
+Url = https://www.google.com/recaptcha/api/siteverify
+
+
+Google Drive
+
+https://drive.google.com/drive/folders/1JI2513GOSbhLo5EYPPgqkcc7FkxZMw5G?usp=sharing
+
+
+http://3csol.mywebcommunity.org/
+
+Copy Site Key =  6LdGdxQaAAAAAFujXx3g7jwCkIku3Kz6GKeCsHZQ
+
+Copy Secret Key = 6LdGdxQaAAAAAOJHV7BFyGxcyuu4ANI2ReLOHNZJ
+
+AWARDSPACE.COM
+
+ https://cp1.awardspace.net/beta/
+
+3694362
+
+FTP User = 3694362_salirazakazmi
+
+
+
+https://iconify.design/icon-sets/
+
+
+https://seeklogo.com/free-vector-logos/pakistan
+
+https://www.clipartkey.com/search/website/
+

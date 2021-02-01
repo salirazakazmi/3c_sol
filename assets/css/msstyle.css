@@ -1,0 +1,252 @@
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: url("bg.png"), -webkit-linear-gradient(bottom, #0250c5, #d43f8d);
+}
+::selection{
+  color: #fff;
+  background: #d43f8d;
+} */
+ .mcontainer{
+  width: 50%;
+  background: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 50px 35px 10px 35px;
+  overflow: auto;
+}
+.mcontainer header{
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.mcontainer .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+.mcontainer .form-outer form{
+  display: flex;
+  width: 400%;
+} 
+.form-outer form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.form-outer form .page .title{
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+.form-outer form .page .field{
+  width: 100%;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+.form-outer form .page .field2{
+  width: 100%;
+  /* height: 30px; */
+  margin: -5px 0;
+  display: flex;
+  position: relative;
+}
+form .page .field .label{
+  position: absolute;
+  top: -10px;
+  font-weight: 500;
+}
+form .page .field input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+form .page .field .label2{
+  position: absolute;
+  top: -20px;
+  font-weight: 500;
+}
+
+form .page .field textarea{
+  height: 200%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+form .page .field select{
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+form .page .field select .small{
+  width: 30%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+form .page .field button{
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #5846f9;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+form .page .field button2{
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #5846f9;
+  margin-top: 2px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+
+form .page .field button:hover{
+  background: #000;
+}
+form .page .btns button{
+  margin-top: -0px!important;
+}
+form .page .btns button.prev{
+  margin-right: 3px;
+  font-size: 17px;
+}
+form .page .btns button.next{
+  margin-left: 3px;
+}
+.mcontainer .mprogress-bar{
+  display: flex;
+  margin: 40px 0;
+  user-select: none;
+}
+.mcontainer .mprogress-bar .step{
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.mcontainer .mprogress-bar .step p{
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 8px;
+}
+.mprogress-bar .step .bullet{
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative; 
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+}
+.mprogress-bar .step .bullet.active{
+  border-color: #d43f8d;
+  background: #d43f8d;
+}
+.mprogress-bar .step .bullet span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mprogress-bar .step .bullet.active span{
+  display: none;
+}
+
+/* .mprogress-bar .step .bullet:before,
+.mprogress-bar .step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  right: -51px;
+  height: 3px;
+  width: 44px;
+  background: #262626;
+} */
+.mprogress-bar .step .bullet.active:after{
+  background: #d43f8d;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.mprogress-bar .step:last-child .bullet:before,
+.mprogress-bar .step:last-child .bullet:after{
+  display: none;
+}
+.mprogress-bar .step p.active{
+  color: #d43f8d;
+  transition: 0.2s linear;
+}
+.mprogress-bar .step .check{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.mprogress-bar .step .check.active{
+  display: block;
+  color: #fff;
+}
+
+
+.g-recaptcha{
+  margin: 100px 120px;
+  display: inline;
+  text-align: center;
+}
+
+.error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+/* .container-fluid {
+  left: 30px;
+  padding-left: 10px;
+  top: 10px;
+} */
